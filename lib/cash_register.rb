@@ -21,6 +21,9 @@ attr_accessor :total, :discount, :items
   def apply_discount
     @discount = @discount.to_f 
     @total = @total - (@total * @discount / 100)
+    if @discount == 0 
+      puts "There is no discount to apply."
+    end 
   end 
   
   def items 
