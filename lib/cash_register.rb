@@ -20,7 +20,7 @@ attr_accessor :total, :discount, :items
   
   def apply_discount
     @discount = @discount.to_f 
-    @total 
+    @total = @total - (@total * @discount / 100)
   end 
   
   def items 
