@@ -4,7 +4,6 @@ attr_accessor :total, :discount
 
   def initialize(discount)
   @total = 0
-  binding.pry
   @discount = discount
   end 
   
