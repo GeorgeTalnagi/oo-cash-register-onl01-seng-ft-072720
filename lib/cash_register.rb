@@ -19,16 +19,13 @@ attr_accessor :total, :discount, :items
   end 
   
   def apply_discount
-    if @discount == 0 
-      puts "There is no discount to apply."
-    else  
+    if @discount > 0 
       @discount = @discount.to_f 
       @total = @total - (@total * @discount / 100)
       puts "After the discount, the total comes to #{@total}."
+    else  
+      puts "There is no discount to apply."
     end 
-  end 
-  
-  def items 
   end 
   
   def void_last_transaction
