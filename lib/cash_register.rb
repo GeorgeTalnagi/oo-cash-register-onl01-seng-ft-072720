@@ -24,7 +24,7 @@ attr_accessor :total, :discount, :items
     else  
       @discount = @discount.to_f 
       @total = @total - (@total * @discount / 100)
-      puts "After the discount, the total comes to #{@total}."
+      puts "After the discount, the total comes to $#{@total}."
     end 
   end 
   
