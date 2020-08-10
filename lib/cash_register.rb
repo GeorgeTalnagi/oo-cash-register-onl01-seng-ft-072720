@@ -16,7 +16,7 @@ attr_accessor :total, :discount, :items, :last_transaction
       @items << title 
       i += 1
     end 
-    @last_transaction = @total
+    @last_transaction = price * quantity
   end 
   
   def apply_discount
