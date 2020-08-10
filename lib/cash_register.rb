@@ -10,7 +10,9 @@ attr_accessor :total, :discount, :items
   
   
   def add_item(title, price, quantity = 1)
-    
+    i = 0 
+    while i < quantity do 
+    end 
     @total += price 
     @items << title 
   end 
