@@ -19,10 +19,11 @@ attr_accessor :total, :discount, :items
   end 
   
   def apply_discount
-    @discount = @discount.to_f 
-    @total = @total - (@total * @discount / 100)
     if @discount == 0 
       puts "There is no discount to apply."
+    else  
+      @discount = @discount.to_f 
+      @total = @total - (@total * @discount / 100)
     end 
   end 
   
